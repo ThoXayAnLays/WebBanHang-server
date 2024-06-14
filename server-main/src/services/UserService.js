@@ -67,6 +67,7 @@ const loginUser = (userLogin) => {
             resolve({
                 status: 'Success',
                 message: 'Login success',
+                data: checkUser.id,
                 access_token,
                 refresh_token
             })
