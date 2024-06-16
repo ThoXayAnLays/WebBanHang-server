@@ -66,7 +66,7 @@ const sendEmailCreateOrder = async (email, orderItems, shippingPrice, totalPrice
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: process.env.MAIL_ACCOUNT, // sender address
+    from: 'claire.bauch94@ethereal.email', // sender address
     to: email, // list of receivers
     subject: "Football Shop Order", // Subject line
     text: "Thank for orders our product", // plain text body
